@@ -14,6 +14,7 @@ import Intro from './home/components/Intro'
 import Footer from './home/components/Footer'
 import Projects from './home/components/Projects'
 import WorkExperience from './home/components/WorkExperience'
+import Stacks from './home/components/Stacks'
 
 export default function Home() {
   return (
@@ -67,7 +68,8 @@ export default function Home() {
         <Projects />
       </section>
       <section className='my-14'>
-        <h3>Stacks</h3>
+        <h3 className='mb-20 text-center'>Stacks</h3>
+        <Stacks />
       </section>
       <section className='my-14'>
         <h3 className='mb-20 text-center'>Work Experience</h3>
