@@ -36,30 +36,39 @@ button {
   min-width: 12rem;
   font-weight: 400;
   font-size: 1.15rem;
-  background-color: #6044d8;
   color: white;
   padding: 1rem 1.6rem;
   border-radius: 30px;
+  background: #6044d8;
+  font-weight: 500;
 }
 
 h1,
 h3,
+h4,
 h5 {
   color: white;
   font-weight: 500;
 }
+h6 {
+  color: #907ceb;
+}
 
 h1 {
-  font-size: 4.2em;
+  font-size: 4.2rem;
   line-height: 1.1;
 }
 
 h3 {
-  font-size: 3.2em;
+  font-size: 2.2rem;
   line-height: 1.1;
 }
 
+h4 {
+  font-size: 1.75rem;
+}
+
 h5 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.1;
 }
