@@ -34,10 +34,10 @@ textarea {
 
 button {
   min-width: 12rem;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.15rem;
   color: white;
-  padding: 1rem 1.6rem;
+  padding: 0.75rem 1.05rem;
   border-radius: 30px;
   background: #6044d8;
   font-weight: 500;
@@ -71,4 +71,24 @@ h4 {
 h5 {
   font-size: 1.25rem;
   line-height: 1.1;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #907ceb;
+}
+
+::selection {
+  color: white;
+  background: #907ceb;
+}
+
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }

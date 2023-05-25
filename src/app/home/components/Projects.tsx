@@ -44,7 +44,7 @@ export default function Projects() {
                 })}
               </div>
               <p className='mt-6'>{proj.description}</p>
-              <p className='mt-12'> Javascript | React | Nodejs</p>
+              <p className='mt-12'> Javascript • React • Nodejs</p>
               <span className='align-self-end text-zinc-700 block'>
                 {proj.status}
               </span>
