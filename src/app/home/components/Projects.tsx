@@ -45,7 +45,7 @@ export default function Projects() {
               </div>
               <p className='mt-6'>{proj.description}</p>
               <p className='mt-12'> Javascript • React • Nodejs</p>
-              <span className='align-self-end text-zinc-700 block'>
+              <span className='align-self-end text-lime-500 block'>
                 {proj.status}
               </span>
             </div>
@@ -59,7 +59,7 @@ export default function Projects() {
 
 const projects = [
   {
-    status: 'ongoing',
+    status: 'deployed: www.motti.day',
     name: 'Motti',
     brief: 'MOTIVATION PHRASE FOR THE DAY',
     description:

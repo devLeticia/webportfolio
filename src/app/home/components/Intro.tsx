@@ -4,6 +4,7 @@ export default function Intro() {
       <p className='text-violet-400 text-lg mt-32 mb-7 tracking-wider'>
         LETÍCIA GONÇALVES
       </p>
+      {/* idea to reality, concept to deployment, dream to reality */}
       <h1 className='text-white mb-14'>
         Building digital products from<br></br>design to code.
       </h1>

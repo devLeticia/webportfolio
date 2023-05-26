@@ -55,7 +55,7 @@ export default function Footer() {
       />
       <span className='font-medium my-12 text-purple-400'>Lets do it</span>
       <p>contact@leticia.pro</p>
-      <p>Built with Love with Next.js</p>
+      <p className='mt-40'>Built with Next.js and Tailwind</p>
       <p>All Rights Reserved 2023</p>
     </footer>
   )

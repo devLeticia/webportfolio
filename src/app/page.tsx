@@ -10,6 +10,7 @@ import Inspirations from './home/components/Inspirations'
 export default function Home() {
   return (
     <>
+      {/* //https://visual.systems/training?ref=onepagelove */}
       <NavBar />
       <main className='flex min-h-screen flex-col items-center justify-between'>
         <section id='intro'>
