@@ -38,9 +38,13 @@ button {
   font-size: 1.15rem;
   color: white;
   padding: 0.75rem 1.05rem;
-  border-radius: 30px;
   background: #6044d8;
   font-weight: 500;
+  background-image: linear-gradient(to right, #6044d8, #7544d8);
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #795ded, #8656e7);
 }
 
 h1,
@@ -91,4 +95,16 @@ img {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+@keyframes scroll {
+  0% {
+    right: 50%;
+  }
+  100% {
+    right: 900%;
+  }
+}
+
+.animate {
+  animation: scroll 60s linear infinite;
 }

@@ -12,24 +12,20 @@ export default function Home() {
     <>
       {/* //https://visual.systems/training?ref=onepagelove */}
       <NavBar />
-      <main className='flex min-h-screen flex-col items-center justify-between'>
+      <main className='flex min-h-screen gap-20 flex-col items-center justify-between overflow-hidden'>
         <section id='intro'>
           <Intro />
         </section>
-        <section id='projects' className='my-14'>
-          <h3 className='mb-20 text-center'>Projects</h3>
+        <section id='projects' className='relative overflow-visible'>
           <Projects />
         </section>
-        <section id='stacks' className='my-14'>
-          <h3 className='mb-20 text-center'>Stacks</h3>
+        <section id='stacks'>
           <Stacks />
         </section>
-        <section id='work' className='my-14'>
-          <h3 className='mb-20 text-center'>Work Experience</h3>
+        <section id='work'>
           <WorkExperience />
         </section>
-        <section id='studies' className='my-14'>
-          <h3 className='text-center mb-32'>Studies</h3>
+        <section id='studies'>
           <Studies />
         </section>
         <section id='inspirations' className='my-40'>

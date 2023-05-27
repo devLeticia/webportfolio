@@ -1,12 +1,20 @@
 import Image from 'next/image'
+import externaLinks from '@/../../externalLinks.json'
 export default function Projects() {
+  const dribbbleUrl = externaLinks.dribbbleUrl
+  const githubUrl = externaLinks.dribbbleUrl
+
+  function openLink(platformLink) {
+    window.open(platformLink, '_blank')
+  }
   return (
-    <div className='flex flex-col items-end'>
-      {projects.map((proj) => {
+    <div className='flex flex-col items-center'>
+      <h3 className='my-20 text-center'>Projects</h3>
+      {projects.map((proj, index) => {
         return (
           <div
             key={proj.name}
-            className='grid grid-cols-2 max-w-5xl gap-12 mb-32 relative'
+            className='grid grid-cols-2 max-w-5xl gap-12 mb-32 relative '
           >
             <Image
               src='/projects/character.png'
@@ -16,19 +24,19 @@ export default function Projects() {
               height={264}
               priority
             />
-            <div className='rounded-lg overflow-clip max-h-96'>
+            <div className='rounded-lg overflow-clip max-h-96 cursor-pointer hover:shadow-2xl hover:shadow-purple-900 transition-shadow ease-linear delay-100'>
               <Image
                 src='/projects/background.png'
                 alt='Leticia Goncalves Logo'
-                className='w-full'
+                className='w-full '
                 width={860}
                 height={860}
                 priority
               />
             </div>
-            <div className='flex flex-col'>
-              <h4>{proj.name}</h4>
-              <h6 className='uppercase font-medium tracking-wider'>
+            <div className='flex flex-col '>
+              <h4 className=' cursor-pointer'>{proj.name}</h4>
+              <h6 className=' cursor-pointer uppercase font-medium tracking-wider'>
                 {proj.brief}
               </h6>
               <div className='flex gap-2'>
@@ -52,15 +60,29 @@ export default function Projects() {
           </div>
         )
       })}
-      <button className='text-center right-0 left-0'>Discover More</button>
+      <h5 className='mb-6'>More about it on</h5>
+      <div className='flex'>
+        <button
+          className='text-center right-0 left-0 rounded-l-full'
+          onClick={() => openLink(dribbbleUrl)}
+        >
+          Dribble
+        </button>
+        <button
+          className='text-center right-0 left-0 rounded-r-full'
+          onClick={() => openLink(githubUrl)}
+        >
+          GitHub
+        </button>
+      </div>
     </div>
   )
 }
 
 const projects = [
   {
-    status: 'deployed: www.motti.day',
-    name: 'Motti',
+    status: 'www.mottibox.com',
+    name: 'Motti Box',
     brief: 'MOTIVATION PHRASE FOR THE DAY',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
