@@ -1,16 +1,59 @@
 import Image from 'next/image'
-import { Palette, GraduationCap } from 'phosphor-react'
+import { Palette, Code, GraduationCap } from 'phosphor-react'
+
+const icons = [Code, Palette]
+
+const courses = [
+  {
+    icon: icons[0],
+    name: 'Ignite - Fullstack Javascript',
+    institution: 'ROCKETSEAT',
+    description:
+      'Web, Mobile, and Back-end with JavaScript. Highly advanced hands-on projects with React.js, React Native, Node.js, and other related technologies.',
+    year: 'ongoing',
+  },
+  {
+    icon: icons[1],
+    name: 'Product Design, User Experience and Interfaces',
+    institution: 'INTERACTION DESIGN FOUNDATION',
+    description:
+      'Strong foundation in interactive design principles, from user research to wireframing, prototyping, and usability testing.',
+    year: 'ongoing',
+  },
+]
+const graduations = [
+  {
+    name: 'System Analisys and Development',
+    universities: ['ESTACIO DE SÁ UNVIVERSITY'],
+    conclusionYear: 2022,
+  },
+  {
+    name: 'International Relations',
+    universities: [
+      'PUC-RIO',
+      'UNIVERSITY OF SOUTH CAROLINA',
+      'FREE UNIVERSITY OF BERLIN',
+    ],
+    conclusionYear: 2016,
+  },
+]
 
 export default function Studies() {
   return (
     <div>
       <h3 className='text-center my-20'>Studies</h3>
-      <div className='grid grid-cols-2 gap-12 max-w-5xl'>
-        <div className='flex flex-col gap-10 justify-end p-14'>
+      <div className='grid grid-cols-2 gap-6 max-w-5xl'>
+        <div className='flex flex-col gap-6 justify-end'>
           {courses.map((course) => {
+            const Icon = course.icon
             return (
-              <div key={course.name} className='flex justify-start gap-6'>
-                <Palette size={72} color={'#907ceb'} />
+              <div
+                key={course.name}
+                className='flex  bg-neutral-900 rounded-lg py-14 pl-10 pr-14 items-start gap-6'
+              >
+                <span>
+                  <Icon size={32} color={'#907ceb'} className='shrink-0' />
+                </span>
                 <div className='flex flex-col'>
                   <h5>{course.name}</h5>
                   <h6 className='mt-3 uppercase font-medium tracking-wider'>
@@ -23,7 +66,7 @@ export default function Studies() {
             )
           })}
         </div>
-        <div className='flex flex-col gap-10 bg-neutral-950 pl-14 pb-14 rounded-lg overflow-clip'>
+        <div className='flex flex-col gap-6 bg-neutral-950 pl-14 pb-14 rounded-lg overflow-clip'>
           <div className='flex w-full justify-between'>
             <GraduationCap size={42} color={'#907ceb'} className='mt-14' />
             <Image
@@ -37,7 +80,10 @@ export default function Studies() {
           </div>
           {graduations.map((grad) => {
             return (
-              <div key={grad.name} className='flex flex-col w-2/3'>
+              <div
+                key={grad.name}
+                className='flex flex-col justify-end h-full  w-2/3'
+              >
                 <h5 className='mb-3'>{grad.name}</h5>
                 {grad.universities.map((uni) => {
                   return (
@@ -57,39 +103,3 @@ export default function Studies() {
     </div>
   )
 }
-
-const courses = [
-  {
-    icon: 'code-block',
-    name: 'Ignite FullStack Javascript',
-    institution: 'ROCKETSEAT',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    year: 'ongoing',
-  },
-  {
-    icon: 'pallete',
-    name: 'Product Design, User Experience and Interfaces',
-    institution: 'INTERACTION DESIGN FOUNDATION',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    year: 'ongoing',
-  },
-]
-
-const graduations = [
-  {
-    name: 'System Analisys and Development',
-    universities: ['ESTACIO DE SÁ UNVIVERSITY'],
-    conclusionYear: 2022,
-  },
-  {
-    name: 'International Relations',
-    universities: [
-      'PUC-RIO',
-      'UNIVERSITY OF SOUTH CAROLINA',
-      'FREE UNIVERSITY OF BERLIN',
-    ],
-    conclusionYear: 2016,
-  },
-]

@@ -2,6 +2,7 @@
   "linkedinUrl": "https://localhost:3000/",
   "dribbbleUrl": "https://localhost:3000/",
   "githubUrl": "https://localhost:3000/",
+  "email": "https://localhost:3000/",
   "discordUrl": "https://localhost:3000/",
-  "email": "https://localhost:3000/"
+  "emailUrl": "https://localhost:3000/"
 }

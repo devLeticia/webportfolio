@@ -62,10 +62,7 @@ export default function Projects() {
       })}
       <h5 className='mb-6'>More about it on</h5>
       <div className='flex'>
-        <button
-          className='text-center right-0 left-0 rounded-l-full'
-          onClick={() => openLink(dribbbleUrl)}
-        >
+        <button className='text-center right-0 left-0 rounded-l-full'>
           Dribble
         </button>
         <button
