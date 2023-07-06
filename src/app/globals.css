@@ -50,13 +50,12 @@ button:hover {
 h1,
 h3,
 h4,
-h5 {
+h5,
+h6{
   color: white;
   font-weight: 500;
 }
-h6 {
-  color: #907ceb;
-}
+
 
 h1 {
   font-size: 4.2rem;
@@ -106,5 +105,5 @@ img {
 }
 
 .animate {
-  animation: scroll 60s linear infinite;
+  animation: scroll 90s linear infinite;
 }

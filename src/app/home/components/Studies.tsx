@@ -49,7 +49,7 @@ export default function Studies() {
             return (
               <div
                 key={course.name}
-                className='flex  bg-neutral-900 rounded-lg py-14 pl-10 pr-14 items-start gap-6'
+                className='flex  bg-zinc-950 rounded-lg py-14 pl-10 pr-14 items-start gap-6'
               >
                 <span>
                   <Icon size={32} color={'#907ceb'} className='shrink-0' />
@@ -66,7 +66,7 @@ export default function Studies() {
             )
           })}
         </div>
-        <div className='flex flex-col gap-6 bg-neutral-950 pl-14 pb-14 rounded-lg overflow-clip'>
+        <div className='flex flex-col gap-6 bg-zinc-950 pl-14 pb-14 rounded-lg overflow-clip'>
           <div className='flex w-full justify-between'>
             <GraduationCap size={42} color={'#907ceb'} className='mt-14' />
             <Image

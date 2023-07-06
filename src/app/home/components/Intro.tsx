@@ -12,11 +12,11 @@ export default function Intro() {
     items-center text-center min-h-screen relative'
     >
       <p className='text-violet-400 text-lg mt-32 mb-7 tracking-wider'>
-        LETÍCIA GONÇALVES
+        HI, I&apos;M LETÍCIA GONÇALVES
       </p>
       {/* idea to reality, concept to deployment, dream to reality */}
       <h1 className='text-white mb-14'>
-        Building digital products from<br></br>design to code.
+        Building digital products<br></br>from design to code.
       </h1>
       <p className='text-xl'>
         I am a software developer based in Brazil,<br></br> I specialize in
@@ -30,7 +30,7 @@ export default function Intro() {
         {carrouselWords.map((word, index) => {
           return (
             <p
-              className='left-0 whitespace-nowrap text-8xl font-medium text-neutral-800'
+              className='left-0 whitespace-nowrap text-8xl opacity-50 font-medium text-gray-700'
               key={index}
             >
               {word} {'   '}•{''}
@@ -56,6 +56,7 @@ const carrouselWords = [
   'Logical thinking',
   'Efficient coding',
   'Collaboration',
+  'Never Stop Learning',
   'Strong communication',
   'Versatility',
   'Curiosity',
@@ -66,12 +67,9 @@ const carrouselWords = [
   'Attention to detail',
   'Aesthetic sense',
   'User-centered design',
-  'Empathy',
   'Adaptability',
   'Open-mindedness',
   'Conceptualization',
-  'Typography skills',
-  'Color theory',
   'Storytelling',
   'Problem-solving',
   'Collaboration',
