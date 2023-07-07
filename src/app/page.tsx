@@ -13,15 +13,20 @@ export default function Home() {
       {/* //https://visual.systems/training?ref=onepagelove */}
       <NavBar />
       <main className='flex  gap-20 flex-col items-center w-full justify-center overflow-hidden'>
-        <div className='max-w-5xl'>
-          <section id='intro'>
+        <div className='max-w-4xl'>
+          <section id='intro' className='pb-40'>
             <Intro />
           </section>
+          <section id='stacks' className='py-40'>
+            <Stacks />
+          </section>
+          
           <section id='projects' className='relative overflow-visible'>
             <Projects />
           </section>
-          <section id='stacks'>
-            <Stacks />
+          <section id='inspirations' className='my-40'>
+            <h4 className='text-center mb-16'>Daily Inspired by</h4>
+            <Inspirations />
           </section>
           <section id='work'>
             <WorkExperience />
@@ -29,10 +34,7 @@ export default function Home() {
           <section id='studies'>
             <Studies />
           </section>
-          <section id='inspirations' className='my-40'>
-            <h3 className='text-center mb-32'>Daily Inspired by</h3>
-            <Inspirations />
-          </section>
+          
         </div>
       </main>
       <Footer />

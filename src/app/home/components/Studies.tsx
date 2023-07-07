@@ -6,7 +6,7 @@ const icons = [Code, Palette]
 const courses = [
   {
     icon: icons[0],
-    name: 'Ignite - Fullstack Javascript',
+    name: 'Ignite: Fullstack Javascript',
     institution: 'ROCKETSEAT',
     description:
       'Web, Mobile, and Back-end with JavaScript. Highly advanced hands-on projects with React.js, React Native, Node.js, and other related technologies.',
@@ -41,8 +41,9 @@ const graduations = [
 export default function Studies() {
   return (
     <div>
-      <h3 className='text-center my-20'>Studies</h3>
-      <div className='grid grid-cols-2 gap-6 max-w-5xl'>
+      <h4>Studies</h4>
+      <div className='h-1 mt-3 rounded-full max-w-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'></div>
+      <div className='grid grid-cols-2 gap-6 max-w-5xl mt-12'>
         <div className='flex flex-col gap-6 justify-end'>
           {courses.map((course) => {
             const Icon = course.icon

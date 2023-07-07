@@ -31,12 +31,12 @@ export default function NavBar() {
 
 const sections = [
   {
-    title: 'Projects',
-    idName: 'projects',
+    title: 'Skills',
+    idName: 'stacks',
   },
   {
-    title: 'Stacks',
-    idName: 'stacks',
+    title: 'Projects',
+    idName: 'projects',
   },
   {
     title: 'Work',

@@ -4,73 +4,52 @@ export default function Projects() {
   const dribbbleUrl = externaLinks.dribbbleUrl
   const githubUrl = externaLinks.dribbbleUrl
 
-  function openLink(platformLink) {
-    window.open(platformLink, '_blank')
-  }
   return (
-    <div className='flex flex-col items-center'>
-      <h3 className='my-20 text-center'>Projects</h3>
-      {projects.map((proj, index) => {
-        return (
-          <div
-            key={proj.name}
-            className='grid grid-cols-2 max-w-5xl gap-12 mb-32 relative '
-          >
-            <Image
-              src='/projects/character.png'
-              alt='Leticia Goncalves Logo'
-              className='absolute -bottom-20 left-0'
-              width={264}
-              height={264}
-              priority
-            />
-            <div className='rounded-lg overflow-clip max-h-96 cursor-pointer hover:shadow-2xl hover:shadow-purple-900 transition-shadow ease-linear delay-100'>
-              <Image
-                src='/projects/background.png'
-                alt='Leticia Goncalves Logo'
-                className='w-full '
-                width={860}
-                height={860}
-                priority
-              />
-            </div>
-            <div className='flex flex-col '>
-              <h4 className=' cursor-pointer'>{proj.name}</h4>
-              <h6 className=' cursor-pointer uppercase font-medium tracking-wider'>
-                {proj.brief}
-              </h6>
-              <div className='flex gap-2'>
-                {proj.technologies.map((tec) => {
-                  return (
-                    <span
-                      key={tec}
-                      className='px-3 py-2 uppercase  tracking-widest bg-neutral-900 text-yellow-300  mt-6 inline-block text-xs rounded-md'
-                    >
-                      {tec}
-                    </span>
-                  )
-                })}
-              </div>
-              <p className='mt-6'>{proj.description}</p>
-              <p className='mt-12'> Javascript • React • Nodejs</p>
-              <span className='align-self-end text-lime-500 block'>
-                {proj.status}
-              </span>
-            </div>
-          </div>
-        )
-      })}
-      <h5 className='mb-6'>More about it on</h5>
-      <div className='flex'>
-        <button className='text-center right-0 left-0 rounded-l-full'>
-          Dribble
+    <div>
+      <h4>Projects</h4>
+      <div className='h-1 mt-3 rounded-full w-1/2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'></div>
+      <p className='mt-8'>
+        Develop responsive web pages for a Single-Page Application using
+        JavaScript, HTML, CSS. Develop responsive web pages for a Single-Page
+        Application using JavaScript, HTML, CSS,{' '}
+      </p>
+      <div className='bg-gray-950 w-full border-solid  border-gray-500 p-10 rounded-2xl flex flex-col mt-20 relative'>
+        <h6 className='uppercase font-medium tracking-wider'>FOUR POINTS UX</h6>
+        <p className='mt-6'>
+          Develop responsive web pages for a Single-Page Application using
+          JavaScript, HTML, CSS. Develop responsive web pages for a Single-Page
+          Application using JavaScript, HTML, CSS,{' '}
+        </p>
+        <button className='rounded-full w-48 absolute right-10 bottom-10'>
+          Learn more
         </button>
-        <button
-          className='text-center right-0 left-0 rounded-r-full'
-          onClick={() => openLink(githubUrl)}
-        >
-          GitHub
-        </button>
+        <Image
+          src='/projects/fake_mocks.png'
+          alt='mockups'
+          className='-mb-10 mt-20'
+          width={1200}
+          height={1200}
+        />
+      </div>
+      <div className='flex  mt-20'>
+        <div className='bg-gray-950 w-full border-solid h-96 border-gray-500 p-10 rounded-2xl flex flex-col justify-between'>
+          <h6 className='uppercase font-medium tracking-wider'>Drimoos</h6>
+          <Image
+            src='/projects/fake_mocks.png'
+            alt='mockups'
+            className='-mb-10 '
+            width={1200}
+            height={1200}
+          />
+        </div>
+        <div className='max-w-sm px-10 flex flex-col justify-between'>
+          <p className='mt-6'>
+            Develop responsive web pages for a Single-Page Application using
+            JavaScript, HTML, CSS. Develop responsive web pages for a
+            Single-Page Application using JavaScript, HTML, CSS,{' '}
+          </p>
+          <button className='rounded-full w-full'>Learn more</button>
+        </div>
       </div>
     </div>
   )
