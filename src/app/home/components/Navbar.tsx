@@ -32,7 +32,7 @@ export default function NavBar() {
 const sections = [
   {
     title: 'Skills',
-    idName: 'stacks',
+    idName: 'skills',
   },
   {
     title: 'Projects',

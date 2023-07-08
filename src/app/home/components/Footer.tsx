@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer
       id='contact'
-      className='text-center flex flex-col justify-center relative   items-center min-h-screen w-full  bg-zinc-950'
+      className='text-center flex flex-col justify-center relative   items-center min-h-screen w-full  bg-dark-800'
     >
       <h3 className='text-white bg-red'>Wanna know more? Lets talk!</h3>
       <div className='my-20'>
@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className='bg-purple text-sm  absolute bottom-0 mb-6'>
+      <div className='text-sm  absolute bottom-0 mb-6'>
         <p>Built with Next.js and Tailwind</p>
         <p>All Rights Reserved 2023</p>
       </div>

@@ -42,7 +42,7 @@ export default function Studies() {
   return (
     <div>
       <h4>Studies</h4>
-      <div className='h-1 mt-3 rounded-full max-w-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'></div>
+      <div className='h-1 mt-3 rounded-full max-w-md bg-gradient-to-r  from-lilac-600 to-sky-600 block'></div>
       <div className='grid grid-cols-2 gap-6 max-w-5xl mt-12'>
         <div className='flex flex-col gap-6 justify-end'>
           {courses.map((course) => {
@@ -50,14 +50,14 @@ export default function Studies() {
             return (
               <div
                 key={course.name}
-                className='flex  bg-zinc-950 rounded-lg py-14 pl-10 pr-14 items-start gap-6'
+                className='flex  bg-dark-700 rounded-lg py-14 pl-10 pr-14 items-start gap-6'
               >
                 <span>
                   <Icon size={32} color={'#907ceb'} className='shrink-0' />
                 </span>
                 <div className='flex flex-col'>
                   <h5>{course.name}</h5>
-                  <h6 className='mt-3 uppercase font-medium tracking-wider'>
+                  <h6 className='mt-3 uppercase font-medium tracking-wider text-lilac-600'>
                     {course.institution}
                   </h6>
                   <p className='mt-6'>{course.description}</p>
@@ -67,7 +67,7 @@ export default function Studies() {
             )
           })}
         </div>
-        <div className='flex flex-col gap-6 bg-zinc-950 pl-14 pb-14 rounded-lg overflow-clip'>
+        <div className='flex flex-col gap-6 bg-dark-800 pl-14 pb-14 rounded-lg overflow-clip'>
           <div className='flex w-full justify-between'>
             <GraduationCap size={42} color={'#907ceb'} className='mt-14' />
             <Image

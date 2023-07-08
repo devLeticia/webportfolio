@@ -1,21 +1,24 @@
 import Image from 'next/image'
 export default function Inspirations() {
   return (
-    <div className='flex justify-center items-center gap-12'>
-      {inspirations.map((inspiration, index) => {
-        return (
-          <Image
-            key={`${index} + ${inspiration.name}`}
-            src={`/inspiration-logos/${inspiration.imgFileName}`}
-            alt={inspiration.name}
-            //className='dark:invert'
-            height={172}
-            width={172}
-            // priority
-          />
-        )
-      })}
-    </div>
+    <>
+      <h4 className='text-center mb-16'>Daily Inspired by</h4>
+      <div className='flex justify-center items-center gap-12'>
+        {inspirations.map((inspiration, index) => {
+          return (
+            <Image
+              key={`${index} + ${inspiration.name}`}
+              src={`/inspiration-logos/${inspiration.imgFileName}`}
+              alt={inspiration.name}
+              //className='dark:invert'
+              height={172}
+              width={172}
+              // priority
+            />
+          )
+        })}
+      </div>
+    </>
   )
 }
 

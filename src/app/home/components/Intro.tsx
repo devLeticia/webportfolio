@@ -11,7 +11,7 @@ export default function Intro() {
       className='z-10 flex flex-col w-full max-w-7xl justify-center 
     items-center text-center min-h-screen relative'
     >
-      <p className='text-violet-400 text-lg mt-32 mb-7 tracking-wider'>
+      <p className='text-lilac-600 text-lg mt-32 mb-7 tracking-wider'>
         HI, I&apos;M LETÍCIA GONÇALVES
       </p>
       {/* idea to reality, concept to deployment, dream to reality */}
