@@ -13,8 +13,9 @@ module.exports = {
       'lilac-700': '#6044d8',
 
       'grey-600': '#A1A3BB',
-      'gre-700': '#403D56',
+      'grey-700': '#403D56',
 
+      'dark-500': '#26242B',
       'dark-700': '#1A1A22',
       'dark-800': '#0B0B0F',
       'dark-900': '#010101',
@@ -27,6 +28,9 @@ module.exports = {
     extend: {
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
+      },
+      borderWidth: {
+        1: '1px',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

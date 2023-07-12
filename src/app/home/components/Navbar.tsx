@@ -7,8 +7,8 @@ export default function NavBar() {
           src='/logo.svg'
           alt='Leticia Goncalves Logo'
           className='dark:invert'
-          width={24}
-          height={24}
+          width={46}
+          height={46}
           priority
         />
         <div className='flex gap-6'>

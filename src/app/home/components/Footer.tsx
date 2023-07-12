@@ -30,8 +30,8 @@ export default function Footer() {
             src='/logo.svg'
             alt='Leticia Goncalves Logo'
             className='dark:invert my-3 cursor-pointer'
-            width={30}
-            height={24}
+            width={64}
+            height={64}
             priority
             onClick={() => openLink(dribbbleUrl)}
           />

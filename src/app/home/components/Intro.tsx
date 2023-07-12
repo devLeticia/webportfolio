@@ -30,7 +30,7 @@ export default function Intro() {
         {carrouselWords.map((word, index) => {
           return (
             <p
-              className='left-0 whitespace-nowrap text-8xl opacity-50 font-medium text-gray-700'
+              className='left-0 whitespace-nowrap text-8xl font-medium text-grey-600'
               key={index}
             >
               {word} {'   '}•{''}

@@ -14,56 +14,59 @@ export default function WorkExperience() {
         </p>
       </div>
       <div className='bg-dark-800 w-full border-solid  border-gray-500 p-16 mr-16 rounded-2xl flex flex-col mt-12'>
-        <h5>Software Developer</h5>
-        <h6 className='mt-2 uppercase font-medium tracking-wider text-lilac-600'>
-          Nelogica
-        </h6>
-        <p className='mt-6'>
-          Develop responsive web pages for a Single-Page Application using
-          JavaScript, HTML, CSS.Develop responsive web pages for a Single-Page
-          Application using JavaScript, HTML, CSS,
-        </p>
-        <p className='mt-6'>
-          Develop responsive web pages for a Single-Page Application using
-          JavaScript, HTML, CSS.Develop responsive web pages for a Single-Page
-          Application using JavaScript, HTML, CSS,
-        </p>
-        <p className='mt-6 mb-16'>
-          Develop responsive web pages for a Single-Page Application using
-          JavaScript, HTML, CSS.Develop responsive web pages for a Single-Page
-          Application using JavaScript, HTML, CSS,
-        </p>
-        <div className='grid grid-cols-2 border border-t-2 border-x-0 border-b-0 -mx-16 px-16 '>
-          <div className='flex flex-col items-center max-w justify-center text-center border border-r-2 border-y-0 border-l-0 mr-16 -mb-16 pr-12'>
-            <Image
-              src='/diamond.svg'
-              alt='company acquisition'
-              className='dark:invert'
-              width={42}
-              height={42}
-              priority
-            />
-            <h6 className='mt-3 uppercase font-medium tracking-wider text-sun-600'>
+        <div>
+          <h5>Software Developer</h5>
+          <h6 className='mt-2 uppercase font-medium tracking-wider text-lilac-600'>
+            Nelogica
+          </h6>
+          <p className='mt-6'>
+            Develop responsive web pages for a Single-Page Application using
+            JavaScript, HTML, CSS.Develop responsive web pages for a Single-Page
+            Application using JavaScript, HTML, CSS,
+          </p>
+          <p className='mt-6'>
+            Develop responsive web pages for a Single-Page Application using
+            JavaScript, HTML, CSS.Develop responsive web pages for a Single-Page
+            Application using JavaScript, HTML, CSS,
+          </p>
+          <p className='mt-6 mb-16'>
+            Develop responsive web pages for a Single-Page Application using
+            JavaScript, HTML, CSS.Develop responsive web pages for a Single-Page
+            Application using JavaScript, HTML, CSS,
+          </p>
+        </div>
+
+        <div className=' flex items-center border border-dark-500 border-y-1 border-x-0 -mx-16 px-16 py-6'>
+          <Image
+            src='/diamond.svg'
+            alt='company acquisition'
+            className='dark:invert mr-10'
+            width={36}
+            height={36}
+            priority
+          />
+          <div className='t'>
+            <h6 className='uppercase font-medium tracking-wider text-sun-600'>
               Acquisition
             </h6>
-            <p className='mt-3 w-60 text-sun-300'>
+            <p className='mt-1 text-sun-300'>
               Company was acquired by billionaire Company
             </p>
           </div>
-          <div className='mt-16'>
-            <h5>Software Developer</h5>
-            <h6 className='mt-2 uppercase font-medium tracking-wider text-lilac-600'>
-              Nelogica
-            </h6>
-            <p className='mt-12'>
-              Develop responsive web pages for a Single-Page Application using
-              JavaScript, HTML, CSS.Develop responsive web pages.
-            </p>
-            <p className='mt-6'>
-              Develop responsive web pages for a Single-Page Application using
-              JavaScript, HTML, CSS.Develop responsive web pages.
-            </p>
-          </div>
+        </div>
+        <div className='mt-16'>
+          <h5>Software Developer</h5>
+          <h6 className='mt-2 uppercase font-medium tracking-wider text-lilac-600'>
+            Nelogica
+          </h6>
+          <p className='mt-12'>
+            Develop responsive web pages for a Single-Page Application using
+            JavaScript, HTML, CSS.Develop responsive web pages.
+          </p>
+          <p className='mt-6'>
+            Develop responsive web pages for a Single-Page Application using
+            JavaScript, HTML, CSS.Develop responsive web pages.
+          </p>
         </div>
       </div>
     </div>
