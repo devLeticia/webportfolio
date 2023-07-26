@@ -1,7 +1,7 @@
 import Image from 'next/image'
 export default function Stacks() {
   return (
-    <div className='bg-dark-800 w-full border-gray-500 p-14 relative border-solid border-1 border-dark-700 rounded-2xl flex'>
+    <div className='bg-dark-800 w-full  p-14 relative border-solid border-1 border-dark-700 rounded-2xl flex'>
       <div className='bg-dark-700 -mt-32 -mb-32 w-full max-w-lg  rounded-2xl border-solid border-1 border-dark-500 p-14 '>
         <h4>Skills</h4>
         <div className='h-1 mt-3 rounded-full w-full bg-gradient-to-r from-lilac-600  to-sky-600'></div>
@@ -33,18 +33,15 @@ export default function Stacks() {
           })}
         </div>
       </div>
-      <div className='flex flex-col justify-between max-w-xs  pl-16'>
+      <div className='flex flex-col justify-between max-w-xs  pl-12'>
         <div>
-          <h2 className='text-white font-medium'>Ipsum Lorem</h2>
+          <h2 className='text-white font-medium'>Stunning Design, Flawless Code!</h2>
           <p className='mt-6'>
-            Develop responsive web pages for a Single-Page Application using
-            javaScript, HTML, CSS.Develop responsive web pages for a Single-Page
-            Application using javaScript, HTML, CSS,
+          Proficient in HTML, CSS, JavaScript, and Vue.js/React! Mastering SPA concepts and skilled with various frameworks. 
+          Backend knowledge includes .NET/C# and Node/JavaScript.
           </p>
           <p className='mt-6'>
-            Vue.js and Tailwind maintaining clean code patterns and design
-            system guidelines.Develop responsive web pages for a Single-Page
-            Application using javaScript, HTML, CSS.
+          Passionate about UX design, creating stunning visuals with Figma, Adobe XD & Illustrator. Utilizing atomic design, color theory, psychology, and an impeccable taste for captivating designs
           </p>
         </div>
         <button className='bg-white text-white  bottom-0 rounded-full w-full'>
@@ -132,7 +129,7 @@ const stacks = [
       {
         name: 'javascript',
         description: 'javascript Ipsum Lorem',
-        iconPath: '/javascript.svg',
+        iconPath: '/ionic.svg',
       },
     ],
   },
@@ -157,7 +154,7 @@ const stacks = [
       {
         name: 'javascript',
         description: 'javascript Ipsum Lorem',
-        iconPath: '/nestjs.svg',
+        iconPath: '/jest.svg',
       },
       {
         name: 'javascript',
@@ -202,22 +199,22 @@ const stacks = [
       {
         name: 'javascript',
         description: 'javascript Ipsum Lorem',
-        iconPath: '/javascript.svg',
+        iconPath: '/colorTheory.svg',
       },
       {
         name: 'javascript',
         description: 'javascript Ipsum Lorem',
-        iconPath: '/javascript.svg',
+        iconPath: '/psicology.svg',
       },
       {
         name: 'javascript',
         description: 'javascript Ipsum Lorem',
-        iconPath: '/javascript.svg',
+        iconPath: '/sociology.svg',
       },
       {
         name: 'javascript',
         description: 'javascript Ipsum Lorem',
-        iconPath: '/javascript.svg',
+        iconPath: '/goodTaste.svg',
       },
     ],
   },

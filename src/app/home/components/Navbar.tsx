@@ -1,23 +1,23 @@
 import Image from 'next/image'
 export default function NavBar() {
   return (
-    <nav className='w-full flex justify-center fixed bg-black bg-opacity-90 z-40'>
-      <div className='flex pt-6 items-center w-full max-w-7xl justify-between'>
+    <nav className='w-full flex justify-center fixed bg-black bg-opacity-90 z-40 backdrop-blur-sm'>
+      <div className='flex pt-6 items-center w-full max-w-4xl justify-between border-solid border-b-dark-500 border-1 border-x-0 border-t-0 px-6'>
         <Image
           src='/logo.svg'
           alt='Leticia Goncalves Logo'
           className='dark:invert'
-          width={46}
-          height={46}
+          width={28}
+          height={28}
           priority
         />
-        <div className='flex gap-6'>
+        <div className='flex gap-6 '>
           {sections.map((section, index) => {
             return (
               <a
                 key={index}
                 href={`#${section.idName}`}
-                className='px-2 active:text-purple-300 py-6 hover:border-b-2 hover:border-purple-300 hover:text-purple-300 transition-colors duration-200 ease-in-out'
+                className='px-2 active:text-lilac-600 py-6 hover:text-lilac-600 transition-colors duration-200 ease-in-out'
               >
                 {section.title}
               </a>

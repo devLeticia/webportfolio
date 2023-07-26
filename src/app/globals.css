@@ -4,8 +4,8 @@
 
 :root {
   font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 300;
+  line-height: 1.75rem;
+  font-weight: 400;
 
   color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
@@ -25,21 +25,18 @@ body {
 }
 
 body,
-input,
-textarea {
+input {
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
   font-size: 1rem;
 }
 
 button {
   min-width: 12rem;
-  font-weight: 600;
-  font-size: 1.15rem;
+  font-weight: 400;
+  font-size: 1.05rem;
   color: white;
   padding: 0.75rem 1.05rem;
   background: #6044d8;
-  font-weight: 500;
   background-image: linear-gradient(to right, #6044d8, #7544d8);
 }
 

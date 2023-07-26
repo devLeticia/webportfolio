@@ -11,8 +11,8 @@ export default function Inspirations() {
               src={`/inspiration-logos/${inspiration.imgFileName}`}
               alt={inspiration.name}
               //className='dark:invert'
-              height={172}
-              width={172}
+              height={156}
+              width={156}
               // priority
             />
           )

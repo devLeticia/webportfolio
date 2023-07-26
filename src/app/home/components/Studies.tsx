@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Palette, Code, GraduationCap } from 'phosphor-react'
+import { Palette, Code, GraduationCap, Infinity } from 'phosphor-react'
 
 const icons = [Code, Palette]
 
@@ -28,7 +28,7 @@ const graduations = [
     conclusionYear: 2022,
   },
   {
-    name: 'International Relations',
+    name: 'International Relations Bs',
     universities: [
       'PUC-RIO',
       'UNIVERSITY OF SOUTH CAROLINA',
@@ -50,26 +50,29 @@ export default function Studies() {
             return (
               <div
                 key={course.name}
-                className='flex  bg-dark-700 rounded-lg py-14 pl-10 pr-14 items-start gap-6'
+                className='flex bg-dark-800 rounded-lg py-14 pl-10 pr-14 items-start gap-6 border-solid border-1 border-dark-700'
               >
                 <span>
                   <Icon size={32} color={'#907ceb'} className='shrink-0' />
                 </span>
                 <div className='flex flex-col'>
                   <h5>{course.name}</h5>
-                  <h6 className='mt-3 uppercase font-medium tracking-wider text-lilac-600'>
+                  <h6 className='mt-3 text-sm uppercase font-medium tracking-wider text-lilac-600'>
                     {course.institution}
                   </h6>
                   <p className='mt-6'>{course.description}</p>
-                  <span className='mt-3 text-zinc-700'>{course.year}</span>
+                  <div className="flex items-center mt-3">
+                  <Infinity size={18} color={'#907ceb'} className='mr-3' />
+                  <span className='text-sm font-thin text-lime-300'>{course.year}</span>
+                  </div>
                 </div>
               </div>
             )
           })}
         </div>
-        <div className='flex flex-col gap-6 bg-dark-800 pl-14 pb-14 rounded-lg overflow-clip'>
+        <div className='flex flex-col gap-6 bg-dark-800 pl-14 pb-14 rounded-lg overflow-clip border-solid border-1 border-dark-700'>
           <div className='flex w-full justify-between'>
-            <GraduationCap size={42} color={'#907ceb'} className='mt-14' />
+            <GraduationCap size={32} color={'#907ceb'} className='mt-14' />
             <Image
               src='/globe.svg'
               alt='Earth Globe'
@@ -83,17 +86,17 @@ export default function Studies() {
             return (
               <div
                 key={grad.name}
-                className='flex flex-col justify-end h-full  w-2/3'
+                className='flex flex-col justify-end h-full pr-10'
               >
                 <h5 className='mb-3'>{grad.name}</h5>
                 {grad.universities.map((uni) => {
                   return (
-                    <h6 key={uni} className='uppercase font-medium'>
+                    <h6 key={uni} className='uppercase font-medium text-sm text-lilac-600'>
                       {uni}
                     </h6>
                   )
                 })}
-                <span className='mt-3 text-zinc-700'>
+                <span className='mt-3 text-grey-600'>
                   {grad.conclusionYear}
                 </span>
               </div>

@@ -16,11 +16,11 @@ export default function Intro() {
       </p>
       {/* idea to reality, concept to deployment, dream to reality */}
       <h1 className='text-white mb-14'>
-        Building digital products<br></br>from design to code.
+      Building digital products<br></br>from design to code.
       </h1>
       <p className='text-xl'>
-        I am a software developer based in Brazil,<br></br> I specialize in
-        front-end development and UI/UX Design.
+      I specialize in front-end development and UI/UX Design. 
+      <br></br>Hand me some squares and circles, and I&apos;ll weave amazing stuff into reality!
       </p>
       <button className='my-14 rounded-full' onClick={openLinkedin}>
         Get in touch
@@ -30,7 +30,7 @@ export default function Intro() {
         {carrouselWords.map((word, index) => {
           return (
             <p
-              className='left-0 whitespace-nowrap text-8xl font-medium text-grey-600'
+              className='left-0 whitespace-nowrap text-8xl font-medium text-dark-700'
               key={index}
             >
               {word} {'   '}•{''}
@@ -47,6 +47,7 @@ export default function Intro() {
 
 const carrouselWords = [
   'Creativity',
+  'Stunning design',
   'Problem-solving',
   'Analytical',
   'Attention to detail',
