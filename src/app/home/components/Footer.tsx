@@ -7,21 +7,50 @@ import {
   DiscordLogo,
   EnvelopeSimple,
 } from 'phosphor-react'
-const icons = [
-  LinkedinLogo,
-  DribbbleLogo,
-  GithubLogo,
-  DiscordLogo,
-  EnvelopeSimple,]
-export default function Footer() {
+
+
   const linkedinUrl = externaLinks.linkedinUrl
   const dribbbleUrl = externaLinks.dribbbleUrl
   const githubUrl = externaLinks.githubUrl
   const discordUrl = externaLinks.discordUrl
   const emailUrl = externaLinks.emailUrl
+  
+  const socialMedias = [
+    {
+      name: 'Linkedin',
+      url:  linkedinUrl,
+      icon:  LinkedinLogo
+    },
+    {
+      name: 'Dribble',
+      url:  dribbbleUrl,
+      icon:  DribbbleLogo
+    },
+    {
+      name: 'Git Hub',
+      url:  githubUrl,
+      icon:  GithubLogo
+    },
+    {
+      name: 'Discord',
+      url:  discordUrl,
+      icon:  DiscordLogo
+    },
+    {
+      name: 'E-mail',
+      url:  emailUrl,
+      icon:  EnvelopeSimple
+    },
+  ]
+export default function Footer() {
+ 
 
   function openLink(platformLink: string | URL | undefined) {
-    window.open(platformLink, '_blank')
+    if (platformLink === emailUrl) sendEmail()
+    else window.open(platformLink, '_blank')
+  }
+  function sendEmail() {
+    window.location.href = `mailto:${emailUrl}`
   }
   //include sJIRA, GIT, TEAMS, SLACK,
   return (
@@ -39,23 +68,25 @@ export default function Footer() {
             width={32}
             height={32}
             priority
-            onClick={() => openLink(dribbbleUrl)}
           />
           <span className='text-'>Letícia Gonçalves</span>
           <span>Software Developer</span>
         </div>
-        <div className='flex gap-6 mt-12 justify-self-center bg-dark'>
+        <div className='flex gap-6 mt-12 justify-self-center'>
           {
-            icons.map((icon, index) => {
-              const Icon = icon
+            socialMedias.map((item, index) => {
+              const Icon = item.icon
               return (
-                <Icon key={index} size={48} color={'#907ceb'} weight='fill'
+                <div key={index} className='bg-dark' onClick={() => openLink(item.url)}>
+                  <Icon  size={48} color={'#907ceb'} weight='fill'
                 className='bg-dark-700 p-2 rounded-md border-solid border-1 border-dark-500 cursor-pointer' />
+                </div>
               )
             })
           }
+
         </div>
-        <p className="mt-12">contact@leticia.pro</p>
+        <p onClick={sendEmail} className="mt-12 cursor-pointer">{emailUrl}</p>
       </div>
 
       <div className='text-sm bottom-0 absolute max-w-4xl w-full mb-6 border-t-dark-700 border-1 border-x-0 border-b-0 pt-6'>

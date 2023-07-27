@@ -1,9 +1,14 @@
 import Image from 'next/image'
 import externaLinks from '@/../../externalLinks.json'
-export default function Projects() {
-  const dribbbleUrl = externaLinks.dribbbleUrl
-  const githubUrl = externaLinks.dribbbleUrl
 
+const fourPointsUrl = externaLinks.fourPointsUrl
+const drimoosUrl = externaLinks.drimoosUrl
+
+export default function Projects() {
+  
+  function openLink(platformLink: string | URL | undefined) {
+    window.open(platformLink, '_blank')
+  }
   return (
     <div>
       <h4>Projects</h4>
@@ -18,7 +23,7 @@ export default function Projects() {
         <p className='mt-6'>
         A compelling UX/UI blog crafted for developers! Join me on an immersive journey through design and development, where each point unlocks valuable insights for creating captivating user experiences.
         </p>
-        <button className='rounded-full w-48 absolute right-10 bottom-10'>
+        <button className='rounded-full w-48 absolute right-10 bottom-10' onClick={() => openLink(fourPointsUrl)}>
           Learn more
         </button>
         <Image
@@ -48,7 +53,7 @@ export default function Projects() {
             JavaScript, HTML, CSS. Develop responsive web pages for a
             Single-Page Application using JavaScript, HTML, CSS,{' '}
           </p>
-          <button className='rounded-full w-full'>Learn more</button>
+          <button className='rounded-full w-full' onClick={() => openLink(drimoosUrl)}>Learn more</button>
         </div>
       </div>
     </div>

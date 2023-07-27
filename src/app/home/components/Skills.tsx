@@ -1,5 +1,14 @@
 import Image from 'next/image'
-export default function Stacks() {
+import externaLinks from '@/../../externalLinks.json'
+
+const linkedinUrl = externaLinks.linkedinUrl
+const githubUrl = externaLinks.githubUrl
+
+export default function Stacks() {  
+  function openLink(platformLink: string | URL | undefined) {
+    window.open(platformLink, '_blank')
+  }
+
   return (
     <div className='bg-dark-800 w-full  p-14 relative border-solid border-1 border-dark-700 rounded-2xl flex'>
       <div className='bg-dark-700 -mt-32 -mb-32 w-full max-w-lg  rounded-2xl border-solid border-1 border-dark-500 p-14 '>
@@ -44,7 +53,7 @@ export default function Stacks() {
           Passionate about UX design, creating stunning visuals with Figma, Adobe XD & Illustrator. Utilizing atomic design, color theory, psychology, and an impeccable taste for captivating designs
           </p>
         </div>
-        <button className='bg-white text-white  bottom-0 rounded-full w-full'>
+        <button className='bg-white text-white  bottom-0 rounded-full w-full' onClick={() => openLink(linkedinUrl)}>
           Reach out
         </button>
       </div>
