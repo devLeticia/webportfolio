@@ -7,6 +7,7 @@ import Skills from './home/components/Skills'
 import Studies from './home/components/Studies'
 import Footer from './home/components/Footer'
 import Inspirations from './home/components/Inspirations'
+
 export default function Home() {
   return (
     <>
