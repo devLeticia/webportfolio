@@ -22,7 +22,7 @@ export default function Projects() {
           Learn more
         </button>
         <Image
-          src='/projects/fake_mocks.png'
+          src='/my-projects/fake_mocks.png'
           alt='mockups'
           className='-mb-10 mt-20'
           width={1200}
@@ -35,7 +35,7 @@ export default function Projects() {
             Drimoos
           </h6>
           <Image
-            src='/projects/fake_mocks.png'
+            src='/my-projects/fake_mocks.png'
             alt='mockups'
             className='-mb-10 '
             width={1200}

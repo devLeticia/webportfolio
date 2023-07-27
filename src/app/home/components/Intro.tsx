@@ -23,7 +23,7 @@ export default function Intro() {
       <br></br>Hand me some squares and circles, and I&apos;ll weave amazing stuff into reality!
       </p>
       <button className='my-14 rounded-full' onClick={openLinkedin}>
-        Contact
+        Get in touch
       </button>
 
       <div className='w-full animate my-32 flex gap-6  absolute -bottom-32 '>
