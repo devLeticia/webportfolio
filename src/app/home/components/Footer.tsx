@@ -20,7 +20,7 @@ export default function Footer() {
   const discordUrl = externaLinks.discordUrl
   const emailUrl = externaLinks.emailUrl
 
-  function openLink(platformLink) {
+  function openLink(platformLink: string | URL | undefined) {
     window.open(platformLink, '_blank')
   }
   //include sJIRA, GIT, TEAMS, SLACK,
