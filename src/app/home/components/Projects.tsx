@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import externaLinks from '@/../../externalLinks.json'
-import fakeMock from '@/public/my-projects/fakemocks.png'
+import fakeMock from '../../../../public/proj/fakemocks.png'
 
 const fourPointsUrl = externaLinks.fourPointsUrl
 const drimoosUrl = externaLinks.drimoosUrl
@@ -41,11 +41,11 @@ export default function Projects() {
             Drimoos
           </h6>
           <Image
-            src='/my-projects/fake_mocks.png'
+            src='/proj/fakemocks.png'
             alt='mockups'
-            className='-mb-10 '
-            width={1200}
-            height={1200}
+            className='-mb-10 ma '
+            width={600}
+            height={600}
           />
         </div>
         <div className='max-w-sm px-10 flex flex-col justify-between'>
