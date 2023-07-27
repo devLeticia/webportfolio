@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import externaLinks from '@/../../externalLinks.json'
+import fakeMock from '@/public/my-projects/fakemocks.png'
 
 const fourPointsUrl = externaLinks.fourPointsUrl
 const drimoosUrl = externaLinks.drimoosUrl
@@ -27,7 +28,7 @@ export default function Projects() {
           Learn more
         </button>
         <Image
-          src='/my-projects/fakemocks.png'
+          src={fakeMock}
           alt='mockups'
           className='-mb-10 mt-20'
           width={1200}
