@@ -27,7 +27,7 @@ export default function Stacks() {
                       <div key={`${index} + ${stack.name}`}>
                         <div className='h-14 rounded-lg flex items-center justify-center w-full bg-dark-800'>
                           <Image
-                            src={`/skills-logo/${stack.iconPath}`}
+                            src={`/skills-logo${stack.iconPath}`}
                             alt={stack.name}
                             height={28}
                             width={28}
