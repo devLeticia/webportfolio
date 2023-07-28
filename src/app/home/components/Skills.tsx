@@ -10,7 +10,7 @@ export default function Stacks() {
   }
 
   return (
-    <div className='bg-dark-800 md:w-full md:p-14 relative border-solid border-1 border-dark-700 rounded-2xl flex'>
+    <div className='bg-dark-800 md:w-full md:p-14 relative border-solid border-1 border-dark-700 rounded-2xl flex my-32'>
       <div className='bg-dark-700 md:-mt-32 md:-mb-32 w-full md:max-w-lg  rounded-2xl border-solid border-1 border-dark-500 p-10 md:p-14 '>
         <h4>Skills</h4>
         <div className='h-1 mt-3 rounded-full w-full bg-gradient-to-r from-lilac-600  to-sky-600'></div>
@@ -48,9 +48,6 @@ export default function Stacks() {
           <p className='mt-6'>
           Proficient in HTML, CSS, JavaScript, and Vue.js/React! Mastering SPA concepts and skilled with various frameworks. 
           Backend knowledge includes .NET/C# and Node/JavaScript.
-          </p>
-          <p className='mt-6'>
-          Passionate about UX design, creating stunning visuals with Figma, Adobe XD & Illustrator. Utilizing atomic design, color theory, psychology, and an impeccable taste for captivating designs
           </p>
         </div>
         <button className='bg-white text-white  bottom-0 rounded-full w-full' onClick={() => openLink(linkedinUrl)}>

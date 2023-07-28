@@ -70,23 +70,24 @@ export default function Studies() {
             )
           })}
         </div>
-        <div className='flex flex-col gap-6 bg-dark-800 pl-14 pb-14 rounded-lg overflow-clip border-solid border-1 border-dark-700'>
+        <div className='flex flex-col justify-between gap-6 bg-dark-800 pl-14 pb-14 rounded-lg overflow-clip border-solid border-1 border-dark-700'>
           <div className='flex w-full justify-between'>
             <GraduationCap size={32} color={'#907ceb'} className='mt-14' />
             <Image
               src='/globe.svg'
               alt='Earth Globe'
               className='-mb-36'
-              width={316}
-              height={316}
+              width={254}
+              height={254}
               priority
             />
           </div>
+          <div className="flex flex-col gap-16">
           {graduations.map((grad) => {
             return (
               <div
                 key={grad.name}
-                className='flex flex-col justify-end h-full pr-10'
+                className='flex flex-col h-full pr-10'
               >
                 <h5 className='mb-3'>{grad.name}</h5>
                 {grad.universities.map((uni) => {
@@ -96,12 +97,13 @@ export default function Studies() {
                     </h6>
                   )
                 })}
-                <span className='mt-3 text-grey-600'>
+                <span className='text-sm  mt-3 text-grey-600'>
                   {grad.conclusionYear}
                 </span>
               </div>
             )
           })}
+          </div>
         </div>
       </div>
     </div>

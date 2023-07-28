@@ -14,28 +14,28 @@ export default function Home() {
       {/* //https://visual.systems/training?ref=onepagelove */}
       <NavBar />
       <main className='flex gap-20 px-6 flex-col items-center w-full justify-center border-box overflow-hidden'>
-        <div className='container '>
+        <div className='container max-w-4xl flex flex-col gap-12 md:gap-36'>
           <section id='intro'>
             <Intro />
           </section>
-          <section id='skills' className='py-60'>
+          <section id='skills'>
             <Skills />
           </section>
-          <section id='projects' className='py-32'>
+          <section id='projects'>
             <Projects />
           </section>
-          <section id='inspirations' className='py-32'>
+          <section id='inspirations'>
             <Inspirations />
           </section>
-          <section id='work' className='py-32'>
+          <section id='work'>
             <WorkExperience />
           </section>
-          <section id='studies' className='py-32'>
+          <section id='studies'>
             <Studies />
           </section>
         </div>
-      </main>
       <Footer />
+      </main>
     </>
   )
 }

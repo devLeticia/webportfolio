@@ -8,7 +8,7 @@ export default function Intro() {
 
   return (
     <div
-      className='z-10 flex flex-col w-full max-w-7xl justify-center 
+      className='z-10 flex flex-col w-full md:justify-center 
     items-center text-center min-h-screen relative'
     >
       <p className='text-lilac-600 md:text-lg mt-32 mb-7 tracking-wider'>
@@ -16,11 +16,10 @@ export default function Intro() {
       </p>
       {/* idea to reality, concept to deployment, dream to reality */}
       <h1 className='text-white mb-14'>
-      Building digital products<br></br>from design to code.
+      Building digital products from design to code.
       </h1>
       <p className='md:text-xl'>
-      I specialize in front-end development and UI/UX Design. 
-      <br></br>Hand me some squares and circles, and I&apos;ll weave amazing stuff into reality!
+      I specialize in front-end development and UI/UX Design. Hand me some squares and circles, and I&apos;ll weave amazing stuff into reality!
       </p>
       <button className='my-14 rounded-full' onClick={openLinkedin}>
         Get in touch
