@@ -11,14 +11,14 @@ export default function Intro() {
       className='z-10 flex flex-col w-full max-w-7xl justify-center 
     items-center text-center min-h-screen relative'
     >
-      <p className='text-lilac-600 text-lg mt-32 mb-7 tracking-wider'>
+      <p className='text-lilac-600 md:text-lg mt-32 mb-7 tracking-wider'>
         HI, I&apos;M LETÍCIA GONÇALVES
       </p>
       {/* idea to reality, concept to deployment, dream to reality */}
       <h1 className='text-white mb-14'>
       Building digital products<br></br>from design to code.
       </h1>
-      <p className='text-xl'>
+      <p className='md:text-xl'>
       I specialize in front-end development and UI/UX Design. 
       <br></br>Hand me some squares and circles, and I&apos;ll weave amazing stuff into reality!
       </p>
@@ -26,7 +26,7 @@ export default function Intro() {
         Get in touch
       </button>
 
-      <div className='w-full animate my-32 flex gap-6  absolute -bottom-32 '>
+      <div className='w-full animate my-32 flex gap-6  absolute -bottom-60 md:-bottom-32 '>
         {carrouselWords.map((word, index) => {
           return (
             <p

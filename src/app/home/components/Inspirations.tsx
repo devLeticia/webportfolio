@@ -10,10 +10,8 @@ export default function Inspirations() {
               key={`${index} + ${inspiration.name}`}
               src={`/inspiration-logos/${inspiration.imgFileName}`}
               alt={inspiration.name}
-              //className='dark:invert'
               height={156}
               width={156}
-              // priority
             />
           )
         })}

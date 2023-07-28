@@ -21,7 +21,7 @@
 body {
   background: #010101;
   color: #A1A3BB;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased
 }
 
 body,
@@ -40,6 +40,19 @@ button {
   background-image: linear-gradient(to right, #6044d8, #7544d8);
 }
 
+h1 {
+  font-size: 1.65rem;
+  line-height: 1.1;
+}
+
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4.4rem;
+    line-height: 1.1;
+  }
+}
+
 button:hover {
   background-image: linear-gradient(to right, #795ded, #8656e7);
 }
@@ -51,12 +64,6 @@ h5,
 h6{
   color: white;
   font-weight: 500;
-}
-
-
-h1 {
-  font-size: 4.2rem;
-  line-height: 1.1;
 }
 
 h3 {

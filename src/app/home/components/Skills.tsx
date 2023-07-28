@@ -10,8 +10,8 @@ export default function Stacks() {
   }
 
   return (
-    <div className='bg-dark-800 w-full  p-14 relative border-solid border-1 border-dark-700 rounded-2xl flex'>
-      <div className='bg-dark-700 -mt-32 -mb-32 w-full max-w-lg  rounded-2xl border-solid border-1 border-dark-500 p-14 '>
+    <div className='bg-dark-800 md:w-full md:p-14 relative border-solid border-1 border-dark-700 rounded-2xl flex'>
+      <div className='bg-dark-700 md:-mt-32 md:-mb-32 w-full md:max-w-lg  rounded-2xl border-solid border-1 border-dark-500 p-10 md:p-14 '>
         <h4>Skills</h4>
         <div className='h-1 mt-3 rounded-full w-full bg-gradient-to-r from-lilac-600  to-sky-600'></div>
         <div>
@@ -25,7 +25,7 @@ export default function Stacks() {
                   {item.stack.map((stack, index) => {
                     return (
                       <div key={`${index} + ${stack.name}`}>
-                        <div className='h-14 rounded-lg flex items-center justify-center w-full bg-dark-800'>
+                        <div className='aspect-square	 rounded-lg flex items-center justify-center w-full bg-dark-800'>
                           <Image
                             src={`/skills-logo${stack.iconPath}`}
                             alt={stack.name}
@@ -42,7 +42,7 @@ export default function Stacks() {
           })}
         </div>
       </div>
-      <div className='flex flex-col justify-between max-w-xs  pl-12'>
+      <div className='md:flex flex-col justify-between max-w-xs pl-12 hidden'>
         <div>
           <h2 className='text-white font-medium'>Stunning Design, Flawless Code!</h2>
           <p className='mt-6'>
