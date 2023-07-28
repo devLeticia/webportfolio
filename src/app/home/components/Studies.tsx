@@ -42,8 +42,8 @@ export default function Studies() {
   return (
     <div>
       <h4>Studies</h4>
-      <div className='h-1 mt-3 rounded-full max-w-md bg-gradient-to-r  from-lilac-600 to-sky-600 block'></div>
-      <div className='grid grid-cols-2 gap-6 max-w-5xl mt-12'>
+      <div className='h-1 mt-3 rounded-full w-1/2 bg-gradient-to-r  from-lilac-600 to-sky-600 block'></div>
+      <div className='grid grid-flow-row md:grid-flow-col md:grid-cols-2 gap-6 max-w-5xl mt-12'>
         <div className='flex flex-col gap-6 justify-end'>
           {courses.map((course) => {
             const Icon = course.icon

@@ -13,8 +13,8 @@ export default function Home() {
     <>
       {/* //https://visual.systems/training?ref=onepagelove */}
       <NavBar />
-      <main className='flex gap-20 px-6 flex-col items-center w-full justify-center border-box overflow-y-scroll'>
-        <div className='container max-w-4xl'>
+      <main className='flex gap-20 px-6 flex-col items-center w-full justify-center border-box overflow-hidden'>
+        <div className='container '>
           <section id='intro'>
             <Intro />
           </section>

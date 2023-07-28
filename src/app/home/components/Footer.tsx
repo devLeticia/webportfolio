@@ -64,7 +64,7 @@ export default function Footer() {
           <Image
             src='/logo.svg'
             alt='Leticia Goncalves Logo'
-            className='dark:invert my-3 cursor-pointer'
+            className='my-3 cursor-pointer'
             width={32}
             height={32}
             priority
