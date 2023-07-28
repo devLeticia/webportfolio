@@ -76,7 +76,7 @@ export default function Studies() {
             <Image
               src='/globe.svg'
               alt='Earth Globe'
-              className='dark:invert -mb-36'
+              className='-mb-36'
               width={316}
               height={316}
               priority
