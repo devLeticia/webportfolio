@@ -3,7 +3,7 @@ export default function Inspirations() {
   return (
     <>
       <h4 className='text-center mb-16'>Daily Inspired by</h4>
-      <div className='container flex justify-center items-center gap-12'>
+      <div className='container grid grid-flow-col justify-center items-center gap-6 md:gap-12'>
         {inspirations.map((inspiration, index) => {
           return (
             <Image

@@ -7,6 +7,7 @@ import Skills from './home/components/Skills'
 import Studies from './home/components/Studies'
 import Footer from './home/components/Footer'
 import Inspirations from './home/components/Inspirations'
+import WordsCarrousel from './home/components/WordsCarrousel';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <section id='intro'>
             <Intro />
           </section>
+          <WordsCarrousel />
           <section id='skills'>
             <Skills />
           </section>
@@ -34,8 +36,8 @@ export default function Home() {
             <Studies />
           </section>
         </div>
-      <Footer />
       </main>
+      <Footer/>
     </>
   )
 }

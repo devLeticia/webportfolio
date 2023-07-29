@@ -56,7 +56,7 @@ export default function Footer() {
   return (
     <footer
       id='contact'
-      className='text-center flex flex-col justify-center relative   items-center min-h-screen w-full  bg-dark-800'
+      className='mt-12 text-center flex flex-col justify-center relative items-center min-h-screen w-full  bg-dark-800'
     >
       <h3 className='text-white bg-red'>Wanna Know More? Lets Talk!</h3>
       <div className='my-20'>
@@ -79,14 +79,14 @@ export default function Footer() {
               return (
                 <div key={index} className='bg-dark' onClick={() => openLink(item.url)}>
                   <Icon  size={48} color={'#907ceb'} weight='fill'
-                className='bg-dark-700 p-2 rounded-md border-solid border-1 border-dark-500 cursor-pointer' />
+                className='bg-dark-700 hover:bg-dark-500 p-2 rounded-md border-solid border-1 border-dark-500 cursor-pointer' />
                 </div>
               )
             })
           }
 
         </div>
-        <p onClick={sendEmail} className="mt-12 cursor-pointer">{emailUrl}</p>
+        <p onClick={sendEmail} className="mt-12 cursor-pointer hover:text-lilac-600">{emailUrl}</p>
       </div>
 
       <div className='text-sm bottom-0 absolute max-w-4xl w-full mb-6 border-t-dark-700 border-1 border-x-0 border-b-0 pt-6'>

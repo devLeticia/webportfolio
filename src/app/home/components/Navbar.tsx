@@ -1,7 +1,7 @@
 import Image from 'next/image'
 export default function NavBar() {
   return (
-    <nav className='w-full flex justify-center fixed bg-black bg-opacity-90 z-40 backdrop-blur-sm'>
+    <nav className='w-full flex justify-center fixed bg-black bg-opacity-90 z-40 backdrop-blur-sm fadeInDown'>
       <div className='flex pt-6 py-6 items-center w-full max-w-4xl justify-center md:justify-between border-solid border-b-dark-500 border-1 border-x-0 border-t-0 px-6'>
         <a href="#intro">
           <Image

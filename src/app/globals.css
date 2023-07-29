@@ -103,3 +103,18 @@ img {
 .animate {
   animation: scroll 60s linear infinite;
 }
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
