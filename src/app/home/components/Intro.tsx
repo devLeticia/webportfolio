@@ -19,7 +19,7 @@ export default function Intro() {
       Building digital products from design to code.
       </h1>
       <p className='md:text-xl fadeInUp-animation'>
-      I specialize in front-end development and UI/UX Design. Hand me some squares and circles, and I&apos;ll weave amazing stuff into reality!
+      I&apos;m a software developer specializing in front-end development and UI/UX design. <br className="hidden md:block" />Give me some squares and circles, and I&apos;ll craft amazing digital products!
       </p>
       <button className='my-14 rounded-full fadeInUp-animation' onClick={openLinkedin}>
         Get in touch

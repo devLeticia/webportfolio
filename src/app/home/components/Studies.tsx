@@ -61,9 +61,11 @@ export default function Studies() {
                     {course.institution}
                   </h6>
                   <p className='mt-6'>{course.description}</p>
-                  <div className="flex items-center mt-3">
-                  <Infinity size={18} color={'#907ceb'} className='mr-3' />
-                  <span className='text-sm font-thin text-lime-300'>{course.year}</span>
+                  <div className='flex items-center mt-3'>
+                    <Infinity size={18} color={'#907ceb'} className='mr-3' />
+                    <span className='text-sm font-thin text-lime-300'>
+                      {course.year}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -82,27 +84,27 @@ export default function Studies() {
               priority
             />
           </div>
-          <div className="flex flex-col gap-16">
-          {graduations.map((grad) => {
-            return (
-              <div
-                key={grad.name}
-                className='flex flex-col h-full pr-10'
-              >
-                <h5 className='mb-3'>{grad.name}</h5>
-                {grad.universities.map((uni) => {
-                  return (
-                    <h6 key={uni} className='uppercase font-medium text-sm text-lilac-600'>
-                      {uni}
-                    </h6>
-                  )
-                })}
-                <span className='text-sm  mt-3 text-grey-600'>
-                  {grad.conclusionYear}
-                </span>
-              </div>
-            )
-          })}
+          <div className='flex flex-col gap-16'>
+            {graduations.map((grad) => {
+              return (
+                <div key={grad.name} className='flex flex-col h-full pr-10'>
+                  <h5 className='mb-3'>{grad.name}</h5>
+                  {grad.universities.map((uni) => {
+                    return (
+                      <h6
+                        key={uni}
+                        className='uppercase font-medium text-sm text-lilac-600'
+                      >
+                        {uni}
+                      </h6>
+                    )
+                  })}
+                  <span className='text-sm  mt-3 text-grey-600'>
+                    {grad.conclusionYear}
+                  </span>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
