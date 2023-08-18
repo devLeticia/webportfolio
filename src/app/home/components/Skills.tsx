@@ -46,7 +46,10 @@ export default function Stacks() {
         <div>
           <h2 className='text-white font-medium'>Stunning Design, Flawless Code!</h2>
           <p className='mt-6'>
-          With a solid foundation in HTML, CSS, and JavaScript, I&apos;m proficient in building amazing Single Page Applications with Vue.js and React for both web and mobile. On the backend, my go-to tools for efficient APIs are Node.js and C#. Prototypes built with Figma and Illustrator are the foundation of my projects.
+          With a solid foundation in HTML, CSS, and JavaScript, I&apos;m proficient in building amazing Single Page Applications with Vue.js and React for both web and mobile.
+          </p>
+           <p className='mt-6'>
+          On the backend, my go-to tools for efficient APIs are Node.js and C#. Prototypes built with Figma and Illustrator are the foundation of these amazing projects.
           </p>
         </div>
         <button className='bg-white text-white  bottom-0 rounded-full w-full' onClick={() => openLink(linkedinUrl)}>
