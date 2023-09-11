@@ -13,7 +13,7 @@ export default function WorkExperience() {
       <h4>Work Experience</h4>
       <div className='h-1 mt-3 rounded-full flex-col w-full max-w-md bg-gradient-to-r from-lilac-600  to-sky-600 block'></div>
       <p className='mt-8'>
-      Throughout my career in the tech industry, I've acquired valuable experience as both a software developer and UI/UX designer. Here's a concise overview of my journey:
+      Throughout my career in the tech industry, I have acquired valuable experience as both a software developer and UI/UX designer. Here is a concise overview of my journey:
       </p>
       {workExperiences.map((item, index) => {
         return (
@@ -71,7 +71,7 @@ const workExperiences = [
     atributions: [
       `
       At Nelogica, my primary responsibility is to elevate our product as top one application for calculating investors' taxes in the country. 
-      I've been designing and coding innovative features that ensure our product meets our clients' needs, all while delivering a user experience that is both intuitive and enjoyable. 
+      I have been designing and coding innovative features that ensure our product meets our clients' needs, all while delivering a user experience that is both intuitive and enjoyable. 
       `
     ],
     mainDuties: [
