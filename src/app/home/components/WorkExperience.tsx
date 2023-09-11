@@ -1,5 +1,4 @@
 import {
-  ArrowUpRight,
   Layout,
   FileVue,
   UsersFour,
@@ -7,7 +6,6 @@ import {
   Code,
   Lifebuoy,
 } from 'phosphor-react'
-import Image from 'next/image'
 
 export default function WorkExperience() {
   return (
@@ -15,13 +13,12 @@ export default function WorkExperience() {
       <h4>Work Experience</h4>
       <div className='h-1 mt-3 rounded-full flex-col w-full max-w-md bg-gradient-to-r from-lilac-600  to-sky-600 block'></div>
       <p className='mt-8'>
-        Having gained valuable experience in the tech industry, I am skilled as
-        both a software developer and UI/UX designer. Here, a small summary of what I have been working on.
+      Throughout my career in the tech industry, I've acquired valuable experience as both a software developer and UI/UX designer. Here's a concise overview of my journey:
       </p>
       {workExperiences.map((item, index) => {
         return (
           <div
-            key={index}
+            key={item.id}
             className='bg-dark-800 w-full border-solid container border-gray-500 p-10 rounded-2xl flex flex-col mt-12 border-1 border-dark-700'
           >
             <div className='flex flex-col w-full items-center'>
@@ -36,12 +33,13 @@ export default function WorkExperience() {
                     <p>{item.atributions}</p>
                   </div>
                   <div className='flex flex-col gap-3 md:gap-6'>
+                  <p className='text-white font-semibold'>Main Duties</p>
                     {item.mainDuties.map((item, index) => {
                       const Icon = item.icon
                       return (
                         <div
                           key={index}
-                          className='text-sm bg-dark flex gap-3 items-center'
+                          className='text-sm bg-dark flex gap-3 items-start'
                         >
                           <Icon
                             size={42}
@@ -66,11 +64,15 @@ export default function WorkExperience() {
 
 const workExperiences = [
   {
+    id: '001',
     status: '2022 - Present',
     position: 'Software Developer, UX/UI Designer',
     company: 'Nelogica',
     atributions: [
-      "Continuing my journey at Nelogica, a prominent billionaire fintech firm, I had the privilege of applying my expertise as a UX/UI designer and frontend developer. Here, I further honed my skills by crafting innovative solutions and implementing cutting-edge technologies. My contributions played a significant part in elevating the company's products and services to meet the ever-evolving demands of the fintech industry."
+      `
+      At Nelogica, my primary responsibility is to elevate our product as top one application for calculating investors' taxes in the country. 
+      I've been designing and coding innovative features that ensure our product meets our clients' needs, all while delivering a user experience that is both intuitive and enjoyable. 
+      `
     ],
     mainDuties: [
       {
@@ -88,7 +90,8 @@ const workExperiences = [
     ],
   },
   {
-    status: '2021',
+    id: '002',
+    status: '2021 - 2022',
     position: 'Frontend Developer, UX/UI Designer',
     company: 'Akeloo',
     atributions: [

@@ -1,9 +1,8 @@
 import Image from 'next/image'
-import externaLinks from '@/../../externalLinks.json'
-import Drimoos from '../../../../public/proj/drimoos.png'
+import externalLinks from '@/../../externalLinks.json'
 
-const fourPointsUrl = externaLinks.fourPointsUrl
-const drimoosUrl = externaLinks.drimoosUrl
+const fourPointsUrl = externalLinks.fourPointsUrl
+const chimpTokUrl = externalLinks.chimpTokUrl
 
 export default function Projects() {
   function openLink(platformLink: string | URL | undefined) {
@@ -28,16 +27,20 @@ export default function Projects() {
                 <h6 className='mt-3 text-sm uppercase font-medium tracking-wider text-lilac-600'>
                   {item.name}
                 </h6>
+                {item.status === 'Coming soon' && <span className="bg-lilac-700 text-white px-4 py-2 text-xs font-medium rounded-sm mt-6 inline-block">{item.status}</span>}
+               
               </div>
+              {item.status !== 'Coming soon' && 
               <button
                 className='rounded-full hidden md:block absolute right-10 bottom-10'
                 onClick={() => openLink(item.websiteURL)}
               >
                  {item.CTAText}
               </button>
+              
+              }
               <div className="w-full flex justify-center">
               <Image
-             
                 src={item.imgPath}
                 alt={item.name}
                 width={800}
@@ -56,31 +59,31 @@ export default function Projects() {
 
 const projects = [
   {
-    type: 'Medium Blog',
-    brief: 'UI/UX Essentials for Developers',
-    name: 'Four Points UX',
-    websiteURL: 'https://www.medium.com/four-points-ux',
-    status: 'ongoing',
+    type: 'Web Application',
+    brief: 'Pomodoro Timer',
+    name: 'ChimpTok',
+    websiteURL: chimpTokUrl,
+    status: 'Production',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     categories: ['design', 'development', 'marketing', 'web', 'mobile'],
-    technologies: ['AI', 'React', 'Figma'],
+    technologies: ['React', 'Vite', 'Typescript', 'Figma'],
+    imgPath: '/proj/Chimptok.png',
+    CTAText: 'Learn more'
+  },
+  {
+    type: 'Medium Blog',
+    brief: 'UI/UX Essentials for Developers',
+    name: 'Four Points UX',
+    websiteURL: fourPointsUrl,
+    status: 'Coming soon',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    categories: ['design', 'development', 'ui', 'ux', 'web', 'mobile'],
+    technologies: ['Figma', 'Adobe Illustrator', 'Medium'],
     imgPath: 'proj/four-points.png',
     CTAText: 'Access'
   },
-  // {
-  //   type: 'Web Application',
-  //   brief: 'Pomodoro Clock',
-  //   name: 'Monkey Tock',
-  //   websiteURL: 'https://www.medium.com/four-points-ux',
-  //   status: 'ongoing',
-  //   description:
-  //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  //   categories: ['design', 'development', 'marketing', 'web', 'mobile'],
-  //   technologies: ['AI', 'React', 'Figma'],
-  //   imgPath: '/proj/mockeytock.png',
-  //   CTAText: 'Learn more'
-  // },
   // {
   //   status: 'ongoing',
   //   name: 'Quiz Clash',
