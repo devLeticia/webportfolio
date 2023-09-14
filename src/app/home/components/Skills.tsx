@@ -15,10 +15,10 @@ export default function Stacks() {
         <h4>Skills</h4>
         <div className='h-1 mt-3 rounded-full w-full bg-gradient-to-r from-lilac-600  to-sky-600'></div>
         <div>
-          {stacks.map((item) => {
+          {stacks.map((item, index) => {
             return (
               <>
-                <h6 key={item.area} className='mt-8'>
+                <h6 key={`${index} + ${item.area}`} className='mt-8'>
                   {item.area}
                 </h6>
                 <div className='mt-3 grid grid-flow-row grid-cols-5 gap-5 '>

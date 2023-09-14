@@ -1,10 +1,11 @@
 import {
   Layout,
   FileVue,
-  UsersFour,
+  Plugs,
   MagicWand,
   Code,
   Lifebuoy,
+  SketchLogo
 } from 'phosphor-react'
 
 export default function WorkExperience() {
@@ -31,8 +32,22 @@ export default function WorkExperience() {
                 <div className='grid flex-row md:flex-col md:grid-cols-2 gap-12 mt-6'>
                   <div>
                     <p>{item.atributions}</p>
+                  {
+                    item.highlight && (
+                      <div className="flex gap-3 items-center mt-3">
+                          <SketchLogo
+                                    size={42}
+                                    color={'#5ba3fa'}
+                                    weight='fill'
+                                    className='p-2 shrink-0 rounded-md border-s-white'
+                                  />
+                            <p className='text-xs text-sky-600'>{item.highlight}</p>
+                      </div>
+
+                    )
+                  }
                   </div>
-                  <div className='flex flex-col gap-3 md:gap-6'>
+                 <div className='flex flex-col gap-3 md:gap-6'>
                   <p className='text-white font-semibold'>Main Duties</p>
                     {item.mainDuties.map((item, index) => {
                       const Icon = item.icon
@@ -42,10 +57,10 @@ export default function WorkExperience() {
                           className='text-sm bg-dark flex gap-3 items-start'
                         >
                           <Icon
-                            size={42}
+                            size={36}
                             color={'#907ceb'}
                             weight='fill'
-                            className='bg-dark-700 p-2 shrink-0 rounded-md border-solid border-1 border-dark-500 cursor-pointer'
+                            className='bg-dark-700 p-2 shrink-0 rounded-md border-solid border-1 border-dark-500'
                           />
                           <p>{item.description}</p>
                         </div>
@@ -77,15 +92,15 @@ const workExperiences = [
     mainDuties: [
       {
         icon: MagicWand,
-        description: 'Crafted visually captivating interfaces, elevating fintech products to new heights',
+        description: 'Craft innovative UI/UX experiences to delight users while addressing their specific needs.',
       },
       {
         icon: Code,
-        description: 'Implemented cutting-edge frontend techniques for seamless web applications',
+        description: 'Engineer features for the Single Page Application, prioritizing responsiveness and code excellence',
       },
       {
         icon: Lifebuoy,
-        description: 'Provided exceptional support, ensuring customer satisfaction and issue resolution.',
+        description: 'Provide timely bug resolutions and user support, ensuring user satisfaction.',
       },
     ],
   },
@@ -97,18 +112,19 @@ const workExperiences = [
     atributions: [
       `As a UX/UI designer and frontend developer at Akeloo, a rising fintech startup, I played a pivotal role in  designing low and high fidelity prototypes to enhance various features, expand service offerings, and optimize support processes. My work directly contributed to the company's growth and success in the competitive fintech market.`
     ],
+    highlight: 'In 2023, Akeloo was acquired by big fintech Nelogica.',
     mainDuties: [
       {
         icon: Layout,
-        description: 'Ideated and designed captivating UX/UI for new features using Figma and Illustrator.',
+        description: 'Designed user-friendly UI prototypes for new features and elevated the design of existing ones.',
       },
       {
         icon: FileVue,
-        description: 'Expanded and promoted services through creative design solutions, enhancing user engagement.',
+        description: 'Developed reusable HTML, CSS, and JavaScript components, assuring code quality.',
       },
       {
-        icon: UsersFour,
-        description: 'Developed cost-effective support tools, optimizing customer assistance and reducing costs.',
+        icon: Plugs,
+        description: 'Integrated the frontend with RESTful APIs and conduced interface testing.',
       },
     ],
   },
