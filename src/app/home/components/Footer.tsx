@@ -52,13 +52,12 @@ export default function Footer() {
   function sendEmail() {
     window.location.href = `mailto:${emailUrl}`
   }
-  //include sJIRA, GIT, TEAMS, SLACK,
   return (
     <footer
       id='contact'
       className='mt-12 text-center flex flex-col justify-center relative items-center min-h-screen w-full  bg-dark-800'
     >
-      <h3 className='text-white bg-red'>Wanna Know More? Lets Talk!</h3>
+      <h3 className='text-white bg-red'>{`Wanna Know More? Let's Talk!`}</h3>
       <div className='my-20'>
         <div className='flex flex-col items-center '>
           <Image

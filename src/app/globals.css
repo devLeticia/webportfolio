@@ -107,14 +107,15 @@ img {
 @keyframes fadeInUp {
   0% {
     transform: translateY(5rem);
-    opacity: 0
+    opacity: 0;
   }
   100% {
-    transform: translateY(0%);
-    opacity: 1
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 .fadeInUp-animation {
-  animation: 1.5s fadeInUp;
+  animation: 1s fadeInUp ease-out forwards;
+  opacity: 0;
 }
