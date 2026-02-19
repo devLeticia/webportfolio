@@ -42,7 +42,7 @@ export default function Projects() {
       <h4>Projects</h4>
       <div className="h-1 mt-3 rounded-full w-1/2 bg-gradient-to-r from-lilac-600 to-sky-600"></div>
       <p className="mt-8 mb-24">
-       { `Take a look at some of the projects I’ve been working on – each one represents a step in refining my craft, tackling new challenges, and pushing myself to learn and grow.`}
+       { `Building something from scratch means making every decision yourself. Chimptok is where I combine my design and engineering skills to create a product I believe in, from concept to deployment.`}
       </p>
       <div className="flex flex-col md:flex-row gap-12 w-full">
         <div className='w-full md:w-1/2 bg-dark-800 border-solid border-1 border-dark-700 rounded-2xl flex flex-col pt-20 pl-20 mb-12 relative'>

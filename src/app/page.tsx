@@ -22,14 +22,14 @@ export default function Home() {
           <section id='skills'>
             <Skills />
           </section>
+          <section id='work'>
+            <WorkExperience />
+          </section>
           <section id='projects'>
             <Projects />
           </section>
           <section id='inspirations'>
             <Inspirations />
-          </section>
-          <section id='work'>
-            <WorkExperience />
           </section>
           <section id='studies'>
             <Studies />
