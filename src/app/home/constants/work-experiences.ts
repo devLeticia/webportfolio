@@ -39,7 +39,7 @@ export const workExperiences: WorkExperience[] = [
     mainDuties: [
       {
         icon: TreeStructure,
-        description: 'Full-stack architecture from scratch',
+        description: 'End-to-end system design and architecture',
       },
       {
         icon: ShieldCheck,
