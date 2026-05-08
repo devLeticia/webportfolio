@@ -90,7 +90,7 @@ export default function Footer() {
 
       <div className='text-sm bottom-0 absolute max-w-4xl w-full mb-6 border-t-dark-700 border-1 border-x-0 border-b-0 pt-6'>
         <p>Built with Next.js and Tailwind</p>
-        <p>All Rights Reserved 2023</p>
+        <p>All Rights Reserved 2026</p>
       </div>
     </footer>
   )
